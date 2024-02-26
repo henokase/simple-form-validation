@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .bg-dark-image {
+        background: url('./assets/dark texture.jpg') fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .bg-image {
+        background-image: url(./assets/background.jpg);
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+    }
+    .shadow-all {
+        box-shadow: 0 0 10px black;
+    }
+    .font-josefin {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .text-dark {
+        color: black !important;
+    }
+    input::placeholder {
+        color: gray !important;
+    }
+    .error {
+        color: #ff000066 !important;
+    }
+    .error::placeholder {
+        color: #ff000066 !important;
+    }
+}

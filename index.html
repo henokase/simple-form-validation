@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <div class="sm:h-screen font-josefin bg-dark-image flex justify-center items-center max-sm:items-start max-sm:py-10">
+        <div class="w-[500px] text-slate-300 shadow-all rounded py-4 max-sm:w-full max-sm:mx-2 max-sm:shadow-none">
+            <h1 class="text-center text-2xl">Sign Up</h1>
+
+            <form id="sign-up" action="" class="py-8 px-4 sm:grid sm:grid-cols-2 max-sm:space-y-8 sm:gap-6 sm:justify-items-center sm:place-items-start">
+                <div class="sm:w-fit flex flex-col gap-1 justify-center">
+                    <input class="px-4 rounded py-2 text-lg outline-none bg-slate-300 text-dark capitalize" type="text" placeholder="First Name">
+                    <span class="err-one text-red-500 px-2 hidden">*Required Field</span>
+                </div>
+                <div class="sm:w-fit flex flex-col gap-1 justify-center">
+                    <input class="px-4 rounded py-2 text-lg outline-none bg-slate-300 text-dark capitalize" type="text" placeholder="Last Name">
+                    <span class="err-one text-red-500 px-2 hidden">*Required Field</span>
+                </div>
+                <div class="sm:w-fit flex flex-col gap-1 justify-center">
+                    <input id="email" class="px-4 rounded py-2 text-lg outline-none bg-slate-300 text-dark " type="email" placeholder="Email">
+                    <span class="err-one text-red-500 px-2 hidden">*Required Field</span>
+                    <span class="err-two text-red-500 px-2 hidden">*Invalid email</span>
+                </div>
+                <div class="sm:w-fit flex flex-col gap-1 justify-center">
+                    <input id="tel" class="px-4 rounded py-2 text-lg outline-none bg-slate-300 text-dark" type="tel" placeholder="Phone Number">
+                    <span class="err-one text-red-500 px-2 hidden">*Required Field</span>
+                    <span class="err-two text-red-500 px-2 hidden">*Please make sure to include the country code (starting with +), 
+                                                                      followed by the area code (if applicable), and the phone number digits.</span>
+                </div>
+                <div class="sm:w-fit flex flex-col gap-1 justify-center">
+                    <input id="pass" class="px-4 rounded py-2 text-lg outline-none bg-slate-300 text-dark " type="password" placeholder="Create Password">
+                    <span class="err-one text-red-500 px-2 hidden">*Required Field</span>
+                    <span class="err-two text-red-500 px-2 hidden">*Passwords are not same</span>
+                    <span class="err-three text-red-500 px-2 hidden">*Password has to be 8 char long and must atleast include one uppercase,
+                                                                        one lowecase, one number and one special symbol</span>
+                </div>
+                <div class="sm:w-fit flex flex-col gap-1 justify-center">
+                    <input id="cPass" class="px-4 rounded py-2 text-lg outline-none bg-slate-300 text-dark" type="password" placeholder="Confirm Password">
+                    <span class="err-one text-red-500 px-2 hidden">*Required Field</span>
+                    <span class="err-two text-red-500 px-2 hidden">*Passwords are not same</span>
+                    <span class="err-three text-red-500 px-2 hidden">*Password has to be 8 char long and must atleast include one uppercase,
+                                                                        one lowecase, one number and one special symbol</span>
+                </div>
+                <button type="button" class="px-16 text-xl py-2 my-4 border block active:scale-95 max-sm:w-full sm:col-span-2">Submit</button>
+            </form>
+
+            <p class="px-4">If you have an account, <a href="#" class="text-blue-400 hover:underline">Login</a></p>
+        </div>
+    </div>    
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
